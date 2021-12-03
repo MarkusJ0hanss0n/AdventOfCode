@@ -15,10 +15,24 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "7";
-            var dayToTest = new Day1(_year, 1, _useExampleInput);
+            var dayToTest = new _2021Day1(_year, 1, _useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day1_Puzzle2()
+        {
+            // Arrange
+            var expectedResult = "5";
+            var dayToTest = new _2021Day1(_year, 1, _useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
 
             // Assert
             result.Should().Be(expectedResult);
