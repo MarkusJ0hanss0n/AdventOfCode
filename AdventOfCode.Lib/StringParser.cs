@@ -9,7 +9,7 @@ namespace AdventOfCode.Lib
     {
         public static string[] GetStrArrayBySplittingOnRows(this string input)
         {
-            return input.Split('\n');
+            return input.Split(new string[] {"\r\n", "\r", "\n" }, StringSplitOptions.None);
         }
 
         public static int[] GetIntArrayBySplittingOnRows(this string input)
