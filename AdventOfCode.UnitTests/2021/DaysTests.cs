@@ -7,7 +7,6 @@ namespace AdventOfCode.UnitTests
     [TestClass]
     public class DaysTests
     {
-        private readonly int _year = 2021;
         private readonly bool _useExampleInput = true;
 
         [TestMethod]
@@ -15,7 +14,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "7";
-            var dayToTest = new _2021Day1(_year, 1, _useExampleInput);
+            var dayToTest = new _2021Day1(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -29,7 +28,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "5";
-            var dayToTest = new _2021Day1(_year, 1, _useExampleInput);
+            var dayToTest = new _2021Day1(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -43,7 +42,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "150";
-            var dayToTest = new _2021Day2(_year, 2, _useExampleInput);
+            var dayToTest = new _2021Day2(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -57,7 +56,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "900";
-            var dayToTest = new _2021Day2(_year, 2, _useExampleInput);
+            var dayToTest = new _2021Day2(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -71,10 +70,52 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "198";
-            var dayToTest = new _2021Day3(_year, 3, _useExampleInput);
+            var dayToTest = new _2021Day3(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day3_Puzzle2()
+        {
+            // Arrange
+            var expectedResult = "230";
+            var dayToTest = new _2021Day3(_useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day4_Puzzle1()
+        {
+            // Arrange
+            var expectedResult = "4512";
+            var dayToTest = new _2021Day4(_useExampleInput);
+
+            // Act
+            var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day4_Puzzle2()
+        {
+            // Arrange
+            var expectedResult = "1924";
+            var dayToTest = new _2021Day4(_useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
 
             // Assert
             result.Should().Be(expectedResult);

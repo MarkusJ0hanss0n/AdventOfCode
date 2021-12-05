@@ -6,7 +6,7 @@ namespace AdventOfCode.Lib.Days._2021
 {
     public class _2021Day11 : BaseDay, IDay
     {
-        public _2021Day11(int year, int day, bool useExampleInput = false) : base(year, day, useExampleInput)
+        public _2021Day11(bool useExampleInput = false) : base(2021, 11, useExampleInput)
         {
         }
 
