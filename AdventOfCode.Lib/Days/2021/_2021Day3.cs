@@ -98,7 +98,7 @@ namespace AdventOfCode.Lib.Days._2021
             {
                 for (int i = binaryLength - 1; i >= 0; i--)
                 {
-                    if ((binaryNumber & (1 << i)) != 0)
+                    if (IsBitSet(binaryNumber, i))
                     {
                         bitCounts[i] += 1;
                     }
