@@ -204,5 +204,47 @@ namespace AdventOfCode.UnitTests
             // Assert
             result.Should().Be(expectedResult);
         }
+
+        [TestMethod]
+        public void Day8_Puzzle1()
+        {
+            // Arrange
+            var expectedResult = "26";
+            var dayToTest = new _2021Day8(_useExampleInput);
+
+            // Act
+            var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day8_Puzzle2()
+        {
+            // Arrange
+            var expectedResult = "61229";
+            var dayToTest = new _2021Day8(_useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+        [TestMethod]
+        public void Day8_Puzzle9()
+        {
+            // Arrange
+            var expectedResult = "15";
+            var dayToTest = new _2021Day9(_useExampleInput);
+
+            // Act
+            var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
     }
 }
