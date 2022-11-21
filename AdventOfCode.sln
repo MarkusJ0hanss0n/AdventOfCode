@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.Lib", "AdventOfCode.Lib\AdventOfCode.Lib.csproj", "{F312B5CF-FB23-413F-A0EE-F7389EA753D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.UI", "AdventOfCode.UI\AdventOfCode.UI.csproj", "{825B737D-BAC7-4FDF-9D44-29214BF6BECF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.UI", "AdventOfCode.UI\AdventOfCode.UI.csproj", "{825B737D-BAC7-4FDF-9D44-29214BF6BECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.UnitTests", "AdventOfCode.UnitTests\AdventOfCode.UnitTests.csproj", "{D023B4DC-68F2-4D85-8C92-6D9C5B93760F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.UnitTests", "AdventOfCode.UnitTests\AdventOfCode.UnitTests.csproj", "{D023B4DC-68F2-4D85-8C92-6D9C5B93760F}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AdventOfCode.ReactGUI", "AdventOfCode.ReactGUI\AdventOfCode.ReactGUI.esproj", "{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{D023B4DC-68F2-4D85-8C92-6D9C5B93760F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D023B4DC-68F2-4D85-8C92-6D9C5B93760F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D023B4DC-68F2-4D85-8C92-6D9C5B93760F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBC6246-2B87-48DB-BF32-0FBFD5C580AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
