@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Day test template</Title>
+            <Author>Markus Johansson</Author>
+            <Description>Empty template for a new day unit test</Description>
+            <Shortcut>DayTestTemplate</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                [TestMethod]
+        public void Day$Day$_$PuzzleNo$Puzzle()
+        {
+            // Arrange
+            var expectedResult = "";
+            var dayToTest = new _$Year$Day$Day$(_useExampleInput);
+
+            // Act
+            var result = dayToTest.$PuzzleNo$Puzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>Day</ID>
+                    <Default>1</Default>
+                    <ToolTip>Day</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>PuzzleNo</ID>
+                    <Default>First</Default>
+                    <ToolTip>First or Second</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>Year</ID>
+                    <Default>2022</Default>
+                    <ToolTip>Year</ToolTip>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

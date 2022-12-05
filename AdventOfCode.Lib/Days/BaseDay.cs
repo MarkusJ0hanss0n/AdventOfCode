@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AdventOfCode.Lib
 {
+
     public abstract class BaseDay
     {
         private readonly int _year;
         private readonly int _day;
         protected readonly string _input;
+        private int[] ValidYears = { 2021, 2022 };
 
         public BaseDay(int year, int day, bool useExampleInput = false)
         {
@@ -17,7 +17,7 @@ namespace AdventOfCode.Lib
 
             ValidateInput();
 
-            string inputFilePath; 
+            string inputFilePath;
 
             if (useExampleInput)
             {
@@ -34,15 +34,20 @@ namespace AdventOfCode.Lib
         private void ValidateInput()
         {
             ValidateYear();
-            ValidateDay();            
+            ValidateDay();
         }
 
         private void ValidateYear()
         {
-            if (_year != 2021)
+            foreach (var year in ValidYears)
             {
-                throw new ArgumentOutOfRangeException($"Year '{_year}' is not valid");
+                if (_year == year)
+                {
+                    return;
+                }
             }
+
+            throw new ArgumentOutOfRangeException($"Year '{_year}' is not valid");
         }
 
         private void ValidateDay()

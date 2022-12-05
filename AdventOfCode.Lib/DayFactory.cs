@@ -1,4 +1,5 @@
 ﻿using AdventOfCode.Lib.Days._2021;
+using AdventOfCode.Lib.Days._2022;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,23 +16,23 @@ namespace AdventOfCode.Lib
                     switch (day)
                     {
                         case 1:
-                            return new _2021Day1(useExampleInput);
+                            return new _2021Day01(useExampleInput);
                         case 2:
-                            return new _2021Day2(useExampleInput);
+                            return new _2021Day02(useExampleInput);
                         case 3:
-                            return new _2021Day3(useExampleInput);
+                            return new _2021Day03(useExampleInput);
                         case 4:
-                            return new _2021Day4(useExampleInput);
+                            return new _2021Day04(useExampleInput);
                         case 5:
-                            return new _2021Day5(useExampleInput);
+                            return new _2021Day05(useExampleInput);
                         case 6:
-                            return new _2021Day6(useExampleInput);
+                            return new _2021Day06(useExampleInput);
                         case 7:
-                            return new _2021Day7(useExampleInput);
+                            return new _2021Day07(useExampleInput);
                         case 8:
-                            return new _2021Day8(useExampleInput);
+                            return new _2021Day08(useExampleInput);
                         case 9:
-                            return new _2021Day9(useExampleInput);
+                            return new _2021Day09(useExampleInput);
                         case 10:
                             return new _2021Day10(useExampleInput);
                         case 11:
@@ -67,7 +68,14 @@ namespace AdventOfCode.Lib
                         default:
                             throw new ArgumentOutOfRangeException($"Day '{day}' is invalid.");
                     }
-                    break;
+                case 2022:
+                    switch (day)
+                    {
+                        case 1:
+                            return new _2022Day01(useExampleInput);
+                        default:
+                            throw new ArgumentOutOfRangeException($"Day '{day}' is invalid.");
+                    }
                 default:
                     throw new ArgumentOutOfRangeException($"Year '{year}' is invalid.");
             }

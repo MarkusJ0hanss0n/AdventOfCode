@@ -7,9 +7,9 @@ namespace AdventOfCode.Lib.Days._2021
 {
     public delegate int CalculateFuelForPosition(int[] currentPositions, int moveToPosition);
 
-    public class _2021Day7 : BaseDay, IDay
+    public class _2021Day07 : BaseDay, IDay
     {
-        public _2021Day7(bool useExampleInput = false) : base(2021, 7, useExampleInput)
+        public _2021Day07(bool useExampleInput = false) : base(2021, 7, useExampleInput)
         {
         }
 

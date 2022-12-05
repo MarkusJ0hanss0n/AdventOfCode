@@ -2,7 +2,7 @@ using AdventOfCode.Lib.Days._2021;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AdventOfCode.UnitTests
+namespace AdventOfCode.UnitTests._2021
 {
     [TestClass]
     public class DaysTests
@@ -14,7 +14,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "7";
-            var dayToTest = new _2021Day1(_useExampleInput);
+            var dayToTest = new _2021Day01(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -28,7 +28,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "5";
-            var dayToTest = new _2021Day1(_useExampleInput);
+            var dayToTest = new _2021Day01(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -42,7 +42,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "150";
-            var dayToTest = new _2021Day2(_useExampleInput);
+            var dayToTest = new _2021Day02(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -56,7 +56,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "900";
-            var dayToTest = new _2021Day2(_useExampleInput);
+            var dayToTest = new _2021Day02(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -70,7 +70,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "198";
-            var dayToTest = new _2021Day3(_useExampleInput);
+            var dayToTest = new _2021Day03(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -84,7 +84,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "230";
-            var dayToTest = new _2021Day3(_useExampleInput);
+            var dayToTest = new _2021Day03(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -98,7 +98,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "4512";
-            var dayToTest = new _2021Day4(_useExampleInput);
+            var dayToTest = new _2021Day04(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -112,7 +112,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "1924";
-            var dayToTest = new _2021Day4(_useExampleInput);
+            var dayToTest = new _2021Day04(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -126,7 +126,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "5";
-            var dayToTest = new _2021Day5(_useExampleInput);
+            var dayToTest = new _2021Day05(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -140,7 +140,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "12";
-            var dayToTest = new _2021Day5(_useExampleInput);
+            var dayToTest = new _2021Day05(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -154,7 +154,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "5934";
-            var dayToTest = new _2021Day6(_useExampleInput);
+            var dayToTest = new _2021Day06(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -168,7 +168,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "26984457539";
-            var dayToTest = new _2021Day6(_useExampleInput);
+            var dayToTest = new _2021Day06(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -182,7 +182,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "37";
-            var dayToTest = new _2021Day7(_useExampleInput);
+            var dayToTest = new _2021Day07(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -196,7 +196,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "168";
-            var dayToTest = new _2021Day7(_useExampleInput);
+            var dayToTest = new _2021Day07(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -210,7 +210,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "26";
-            var dayToTest = new _2021Day8(_useExampleInput);
+            var dayToTest = new _2021Day08(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
@@ -224,7 +224,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "61229";
-            var dayToTest = new _2021Day8(_useExampleInput);
+            var dayToTest = new _2021Day08(_useExampleInput);
 
             // Act
             var result = dayToTest.SecondPuzzle();
@@ -238,7 +238,7 @@ namespace AdventOfCode.UnitTests
         {
             // Arrange
             var expectedResult = "15";
-            var dayToTest = new _2021Day9(_useExampleInput);
+            var dayToTest = new _2021Day09(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Lib.Days._2021
 {
-    public class _2021Day6 : BaseDay, IDay
+    public class _2021Day06 : BaseDay, IDay
     {
-        public _2021Day6(bool useExampleInput = false) : base(2021, 6, useExampleInput)
+        public _2021Day06(bool useExampleInput = false) : base(2021, 6, useExampleInput)
         {
         }
 

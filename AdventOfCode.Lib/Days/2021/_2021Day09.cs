@@ -5,9 +5,9 @@ using System.Text;
 
 namespace AdventOfCode.Lib.Days._2021
 {
-    public class _2021Day9 : BaseDay, IDay
+    public class _2021Day09 : BaseDay, IDay
     {
-        public _2021Day9(bool useExampleInput = false) : base(2021, 9, useExampleInput)
+        public _2021Day09(bool useExampleInput = false) : base(2021, 9, useExampleInput)
         {
         }
 

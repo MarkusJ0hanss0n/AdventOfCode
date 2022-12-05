@@ -6,9 +6,9 @@ namespace AdventOfCode.Lib.Days._2021
 {
     enum Direction {Forward, Up, Down};
 
-    public class _2021Day2 : BaseDay, IDay
+    public class _2021Day02 : BaseDay, IDay
     {
-        public _2021Day2(bool useExampleInput = false) : base(2021, 2, useExampleInput)
+        public _2021Day02(bool useExampleInput = false) : base(2021, 2, useExampleInput)
         {
         }
 
