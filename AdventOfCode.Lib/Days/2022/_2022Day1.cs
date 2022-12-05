@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCode.Lib.Days._2022
 {
@@ -11,16 +13,55 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            string[] inputLines = _input.GetStrArrayBySplittingOnRows();
+            string[] elfSupplies = GetElfSupplies();
+            var highestElfFoodCalories = 0;
 
-            throw new NotImplementedException();
+            foreach (string elfSupply in elfSupplies)
+            {
+                var totalElfCalories = GetTotalElfCalories(elfSupply);
+
+                if (totalElfCalories > highestElfFoodCalories)
+                {
+                    highestElfFoodCalories = totalElfCalories;
+                }
+            }
+
+            return highestElfFoodCalories.ToString();
         }
 
         public string SecondPuzzle()
         {
-            string[] inputLines = _input.GetStrArrayBySplittingOnRows();
+            string[] elfSupplies = GetElfSupplies();
+            var elfCalories = new List<int>();
+            var topThreeElfFoodCalories = 0;
 
-            throw new NotImplementedException();
+            foreach (string elfSupply in elfSupplies)
+            {
+                elfCalories.Add(GetTotalElfCalories(elfSupply));
+            }
+
+            elfCalories = elfCalories.OrderByDescending(x => x).ToList();
+
+            topThreeElfFoodCalories = elfCalories[0] + elfCalories[1] + elfCalories[2];
+
+            return topThreeElfFoodCalories.ToString();
+        }
+
+        private string[] GetElfSupplies()
+        {
+            return _input.GetStrArrayBySplittingOnRows("\r\n\r\n");
+        }
+
+        private int GetTotalElfCalories(string elfSupply)
+        {
+            var totalElfCalories = 0;
+
+            foreach (var food in elfSupply.GetStrArrayBySplittingOnRows())
+            {
+                totalElfCalories += int.Parse(food);
+            }
+
+            return totalElfCalories;
         }
     }
 
