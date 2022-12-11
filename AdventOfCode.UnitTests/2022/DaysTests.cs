@@ -188,5 +188,35 @@ namespace AdventOfCode.UnitTests._2022
             result.Should().Be(expectedResult);
         }
 
+
+        [TestMethod]
+        public void Day07_FirstPuzzle()
+        {
+            // Arrange
+            var expectedResult = "95437";
+            var dayToTest = new _2022Day07(_useExampleInput);
+
+            // Act
+            var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+
+        [TestMethod]
+        public void Day07_SecondPuzzle()
+        {
+            // Arrange
+            var expectedResult = "24933642";
+            var dayToTest = new _2022Day07(_useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
     }
 }
