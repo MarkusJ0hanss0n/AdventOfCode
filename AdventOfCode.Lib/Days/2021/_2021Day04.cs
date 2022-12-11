@@ -12,8 +12,8 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
-            var instructions = inputRows[0].GetIntArrayBySplittingOnRows(",");
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
+            var instructions = inputRows[0].ToIntArrayBySplittingAndRemovingEmptyEntries(",");
             var bingoBoards = CreateBingoBoards(inputRows);
 
             int horizontalRowNumber = 0;
@@ -41,8 +41,8 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string SecondPuzzle()
         {
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
-            var instructions = inputRows[0].GetIntArrayBySplittingOnRows(",");
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
+            var instructions = inputRows[0].ToIntArrayBySplittingAndRemovingEmptyEntries(",");
             var bingoBoards = CreateBingoBoards(inputRows);
 
             int horizontalRowNumber = 0;
@@ -79,7 +79,7 @@ namespace AdventOfCode.Lib.Days._2021
 
             for (int i = 1; i < inputRows.Length; i++)
             {
-                var bingoRow = inputRows[i].GetIntArrayBySplittingOnRows(" ");
+                var bingoRow = inputRows[i].ToIntArrayBySplittingAndRemovingEmptyEntries(" ");
                 bingoRows.Add(bingoRow);
 
                 if (i % 5 == 0)

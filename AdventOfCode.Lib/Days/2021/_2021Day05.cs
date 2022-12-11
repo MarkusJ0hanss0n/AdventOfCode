@@ -64,7 +64,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public List<Coordinate[]> InputToEntries(string input)
         {
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var entries = new List<Coordinate[]>();
 
             foreach (var row in inputRows)

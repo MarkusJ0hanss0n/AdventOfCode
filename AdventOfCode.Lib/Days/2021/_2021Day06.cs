@@ -19,7 +19,7 @@ namespace AdventOfCode.Lib.Days._2021
 
             var lanternFishes = new List<LanternFish>();
 
-            var inputTimers = _input.GetIntArrayBySplittingOnRows(",");
+            var inputTimers = _input.ToIntArrayBySplittingAndRemovingEmptyEntries(",");
 
             foreach (var inputTimer in inputTimers)
             {

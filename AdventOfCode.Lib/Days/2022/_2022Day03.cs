@@ -15,7 +15,7 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            string[] ruckSacks = _input.GetStrArrayBySplittingOnRows();
+            var ruckSacks = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var totalPriorityPoints = 0;
 
             foreach (var item in ruckSacks)
@@ -30,7 +30,7 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string SecondPuzzle()
         {
-            string[] ruckSacks = _input.GetStrArrayBySplittingOnRows();
+            var ruckSacks = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var totalPriorityPoints = 0;
 
             for (int i = 0; i < ruckSacks.Length - 2; i++)

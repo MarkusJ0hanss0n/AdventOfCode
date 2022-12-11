@@ -14,9 +14,9 @@ namespace AdventOfCode.Lib.Days._2022
         public string FirstPuzzle()
         {
             var totalScore = 0;
-            foreach (var instructionRow in _input.GetStrArrayBySplittingOnRows())
+            foreach (var instructionRow in _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries())
             {
-                var splittedInstruction = instructionRow.GetStrArrayBySplittingOnRows(" ");
+                var splittedInstruction = instructionRow.ToStrArrayBySplittingAndRemovingEmptyEntries(" ");
                 var opponentsChoice = splittedInstruction[0];
                 var myChoice = splittedInstruction[1];
 
@@ -29,9 +29,9 @@ namespace AdventOfCode.Lib.Days._2022
         public string SecondPuzzle()
         {
             var totalScore = 0;
-            foreach (var instructionRow in _input.GetStrArrayBySplittingOnRows())
+            foreach (var instructionRow in _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries())
             {
-                var splittedInstruction = instructionRow.GetStrArrayBySplittingOnRows(" ");
+                var splittedInstruction = instructionRow.ToStrArrayBySplittingAndRemovingEmptyEntries(" ");
                 var opponentsChoice = splittedInstruction[0];
                 var myChoice = splittedInstruction[1];
 

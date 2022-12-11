@@ -12,7 +12,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            int[] inputLines = _input.GetIntArrayBySplittingOnRows();
+            var inputLines = _input.ToIntArrayBySplittingRowsAndRemovingEmptyEntries();
 
             var noOfIncreaseCases = 0;
 

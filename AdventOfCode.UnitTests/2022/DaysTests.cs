@@ -128,5 +128,20 @@ namespace AdventOfCode.UnitTests._2022
             result.Should().Be(expectedResult);
         }
 
+
+        [TestMethod]
+        public void Day05_FirstPuzzle()
+        {
+            // Arrange
+            var expectedResult = "";
+            var dayToTest = new _2022Day05(_useExampleInput);
+
+            // Act
+            var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
     }
 }

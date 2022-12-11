@@ -72,7 +72,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         private List<KeyValuePair<Direction, int>> GetInstructions(string input)
         {
-            var lines = input.GetStrArrayBySplittingOnRows();
+            var lines = input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var instructions = new List<KeyValuePair<Direction, int>>();
 
             foreach (var line in lines)

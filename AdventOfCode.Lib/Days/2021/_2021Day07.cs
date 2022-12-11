@@ -15,7 +15,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            var positions = _input.GetIntArrayBySplittingOnRows(",");
+            var positions = _input.ToIntArrayBySplittingAndRemovingEmptyEntries(",");
 
             var minFuelUsed = CalculateMinFuelUsed(positions, CalculateFuelUsedForPositionWithConstantRate);
 
@@ -24,7 +24,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string SecondPuzzle()
         {
-            var positions = _input.GetIntArrayBySplittingOnRows(",");
+            var positions = _input.ToIntArrayBySplittingAndRemovingEmptyEntries(",");
 
             var minFuelUsed = CalculateMinFuelUsed(positions, CalculateFuelUsedForPosition);
 

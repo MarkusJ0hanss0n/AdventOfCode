@@ -12,7 +12,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            int[] inputLines = _input.GetIntArrayBySplittingOnRows();
+            var inputLines = _input.ToIntArrayBySplittingRowsAndRemovingEmptyEntries();
 
             var noOfIncreaseCases = 0;
 
@@ -28,7 +28,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string SecondPuzzle()
         {
-            int[] inputLines = _input.GetIntArrayBySplittingOnRows();
+            var inputLines = _input.ToIntArrayBySplittingRowsAndRemovingEmptyEntries();
 
             var numberOfThreeList = new List<int>();
             var firstSum = 0;

@@ -13,7 +13,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             int[][] map = new int[inputRows.Length][];
 
             for (int i = 0; i < inputRows.Length; i++)

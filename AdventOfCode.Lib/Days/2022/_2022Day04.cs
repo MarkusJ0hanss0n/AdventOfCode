@@ -13,12 +13,12 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            string[] elfSectionPairs = _input.GetStrArrayBySplittingOnRows();
+            var elfSectionPairs = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var noOfPairsWhereOneFullyContainTheOther = 0;
 
             foreach (var elfSectionPair in elfSectionPairs)
             {
-                var pairParts = elfSectionPair.GetStrArrayBySplittingOnRows(",");
+                var pairParts = elfSectionPair.ToStrArrayBySplittingAndRemovingEmptyEntries(",");
 
                 if (IsOnePairFullyContainedByTheOther(pairParts[0], pairParts[1]))
                 {
@@ -31,12 +31,12 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string SecondPuzzle()
         {
-            string[] elfSectionPairs = _input.GetStrArrayBySplittingOnRows();
+            var elfSectionPairs = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var noOfPairsWhereOneFullyContainTheOther = 0;
 
             foreach (var elfSectionPair in elfSectionPairs)
             {
-                var pairParts = elfSectionPair.GetStrArrayBySplittingOnRows(",");
+                var pairParts = elfSectionPair.ToStrArrayBySplittingAndRemovingEmptyEntries(",");
 
                 if (DoesOnePairPartlyOverlapTheOther(pairParts[0], pairParts[1]))
                 {
@@ -49,8 +49,8 @@ namespace AdventOfCode.Lib.Days._2022
 
         private bool IsOnePairFullyContainedByTheOther(string firstRange, string secondRange)
         {
-            var firstRangeParts = firstRange.GetIntArrayBySplittingOnRows("-");
-            var secondRangeParts = secondRange.GetIntArrayBySplittingOnRows("-");
+            var firstRangeParts = firstRange.ToIntArrayBySplittingAndRemovingEmptyEntries("-");
+            var secondRangeParts = secondRange.ToIntArrayBySplittingAndRemovingEmptyEntries("-");
 
             var firstContainedBySecond = firstRangeParts[0] >= secondRangeParts[0] && firstRangeParts[1] <= secondRangeParts[1];
 
@@ -66,8 +66,8 @@ namespace AdventOfCode.Lib.Days._2022
 
         private bool DoesOnePairPartlyOverlapTheOther(string firstRange, string secondRange)
         {
-            var firstRangeParts = firstRange.GetIntArrayBySplittingOnRows("-");
-            var secondRangeParts = secondRange.GetIntArrayBySplittingOnRows("-");
+            var firstRangeParts = firstRange.ToIntArrayBySplittingAndRemovingEmptyEntries("-");
+            var secondRangeParts = secondRange.ToIntArrayBySplittingAndRemovingEmptyEntries("-");
                         
             return (firstRangeParts[1] >= secondRangeParts[0] && firstRangeParts[0] <= secondRangeParts[1]) ||
                 (secondRangeParts[1] >= firstRangeParts[0] && secondRangeParts[0] <= firstRangeParts[1]);

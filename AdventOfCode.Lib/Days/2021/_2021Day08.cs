@@ -15,7 +15,7 @@ namespace AdventOfCode.Lib.Days._2021
         {
             var totalNoOfUniqueOutputValues = 0;
 
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
 
             foreach (var inputRow in inputRows)
             {
@@ -30,7 +30,7 @@ namespace AdventOfCode.Lib.Days._2021
         {
             var totalSumOfOutputValues = 0;
 
-            var inputRows = _input.GetStrArrayBySplittingOnRows();
+            var inputRows = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
 
             foreach (var inputRow in inputRows)
             {

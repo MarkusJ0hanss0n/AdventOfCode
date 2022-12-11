@@ -164,20 +164,6 @@ namespace AdventOfCode.UnitTests._2021
         }
 
         [TestMethod]
-        public void Day6_Puzzle2()
-        {
-            // Arrange
-            var expectedResult = "26984457539";
-            var dayToTest = new _2021Day06(_useExampleInput);
-
-            // Act
-            var result = dayToTest.SecondPuzzle();
-
-            // Assert
-            result.Should().Be(expectedResult);
-        }
-
-        [TestMethod]
         public void Day7_Puzzle1()
         {
             // Arrange

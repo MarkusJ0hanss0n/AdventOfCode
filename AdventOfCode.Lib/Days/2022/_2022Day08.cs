@@ -13,14 +13,14 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            string[] inputLines = _input.GetStrArrayBySplittingOnRows();
+            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
 
             throw new NotImplementedException();
         }
 
         public string SecondPuzzle()
         {
-            string[] inputLines = _input.GetStrArrayBySplittingOnRows();
+            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
 
             throw new NotImplementedException();
         }

@@ -13,7 +13,7 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            string[] elfSupplies = GetElfSupplies();
+            var elfSupplies = GetElfSupplies();
             var highestElfFoodCalories = 0;
 
             foreach (string elfSupply in elfSupplies)
@@ -31,7 +31,7 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string SecondPuzzle()
         {
-            string[] elfSupplies = GetElfSupplies();
+            var elfSupplies = GetElfSupplies();
             var elfCalories = new List<int>();
             var topThreeElfFoodCalories = 0;
 
@@ -49,14 +49,14 @@ namespace AdventOfCode.Lib.Days._2022
 
         private string[] GetElfSupplies()
         {
-            return _input.GetStrArrayBySplittingOnRows("\r\n\r\n");
+            return _input.ToStrArrayBySplittingAndRemovingEmptyEntries("\r\n\r\n");
         }
 
         private int GetTotalElfCalories(string elfSupply)
         {
             var totalElfCalories = 0;
 
-            foreach (var food in elfSupply.GetStrArrayBySplittingOnRows())
+            foreach (var food in elfSupply.ToStrArrayBySplittingRowsAndRemovingEmptyEntries())
             {
                 totalElfCalories += int.Parse(food);
             }

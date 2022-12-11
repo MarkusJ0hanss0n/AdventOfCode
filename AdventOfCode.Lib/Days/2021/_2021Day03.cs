@@ -13,7 +13,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string FirstPuzzle()
         {
-            var inputLines = _input.GetStrArrayBySplittingOnRows();
+            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var binaryLength = inputLines[0].Length;
             var rowCount = inputLines.Length;
 
@@ -39,7 +39,7 @@ namespace AdventOfCode.Lib.Days._2021
 
         public string SecondPuzzle()
         {
-            var inputLines = _input.GetStrArrayBySplittingOnRows();
+            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
             var binaryLength = inputLines[0].Length;
 
             var binaryNumbers = inputLines.Select(x => Convert.ToInt32(x, 2));
