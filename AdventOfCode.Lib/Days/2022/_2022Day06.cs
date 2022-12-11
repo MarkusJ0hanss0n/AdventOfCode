@@ -13,17 +13,55 @@ namespace AdventOfCode.Lib.Days._2022
 
         public string FirstPuzzle()
         {
-            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
+            var result = "";
+            var noOfDistinctChars = 4;
 
-            throw new NotImplementedException();
+            for (int i = 0; i < _input.Length - noOfDistinctChars; i++)
+            {
+                var currentSequence = _input.Substring(i, noOfDistinctChars);
+                if (AllDisctinctCharsAreDifferent(currentSequence, noOfDistinctChars))
+                {
+                    result = (i + noOfDistinctChars).ToString();
+                    break;
+                }
+            }
+
+            return result;
         }
+
 
         public string SecondPuzzle()
         {
-            var inputLines = _input.ToStrArrayBySplittingRowsAndRemovingEmptyEntries();
+            var result = "";
+            var noOfDistinctChars = 14;
 
-            throw new NotImplementedException();
+            for (int i = 0; i < _input.Length - noOfDistinctChars; i++)
+            {
+                var currentSequence = _input.Substring(i, noOfDistinctChars);
+                if (AllDisctinctCharsAreDifferent(currentSequence, noOfDistinctChars))
+                {
+                    result = (i + noOfDistinctChars).ToString();
+                    break;
+                }
+            }
+
+            return result;
         }
-    }
 
+        private bool AllDisctinctCharsAreDifferent(string currentSequence, int noOfDistinctChars)
+        {
+            var result = true;
+
+            for (int i = 0; i < noOfDistinctChars; i++)
+            {
+                if (currentSequence.LastIndexOf(currentSequence[i]) != i)
+                {
+                    result = false;
+                    break;
+                }
+            }
+            return result;
+        }
+
+    }
 }
