@@ -133,11 +133,26 @@ namespace AdventOfCode.UnitTests._2022
         public void Day05_FirstPuzzle()
         {
             // Arrange
-            var expectedResult = "";
+            var expectedResult = "CMZ";
             var dayToTest = new _2022Day05(_useExampleInput);
 
             // Act
             var result = dayToTest.FirstPuzzle();
+
+            // Assert
+            result.Should().Be(expectedResult);
+        }
+
+
+        [TestMethod]
+        public void Day05_SecondPuzzle()
+        {
+            // Arrange
+            var expectedResult = "MCD";
+            var dayToTest = new _2022Day05(_useExampleInput);
+
+            // Act
+            var result = dayToTest.SecondPuzzle();
 
             // Assert
             result.Should().Be(expectedResult);
