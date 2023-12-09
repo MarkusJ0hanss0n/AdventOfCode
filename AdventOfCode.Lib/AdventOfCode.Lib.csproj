@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="InputFiles\ExampleInputFiles\2023\" />
+    <Folder Include="InputFiles\PuzzleInputFiles\2023\" />
+  </ItemGroup>
+
 </Project>
