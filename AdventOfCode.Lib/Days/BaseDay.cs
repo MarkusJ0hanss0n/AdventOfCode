@@ -8,7 +8,7 @@ namespace AdventOfCode.Lib
         private readonly int _year;
         private readonly int _day;
         protected readonly string _input;
-        private int[] ValidYears = { 2021, 2022 };
+        private int[] ValidYears = { 2021, 2022, 2023 };
 
         public BaseDay(int year, int day, bool useExampleInput = false)
         {

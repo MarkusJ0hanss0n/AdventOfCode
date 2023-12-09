@@ -1,7 +1,5 @@
 ﻿using AdventOfCode.Lib;
-using AdventOfCode.Lib.Days._2021;
 using System;
-using System.Reflection;
 
 namespace AdventOfCode.UI
 {

@@ -13,7 +13,7 @@ namespace AdventOfCode.UnitTests._2023
         public void Day01_FirstPuzzle()
         {
             // Arrange
-            var expectedResult = "";
+            var expectedResult = "142";
             var dayToTest = new _2023Day01(_useExampleInput);
 
             // Act
@@ -23,18 +23,18 @@ namespace AdventOfCode.UnitTests._2023
             result.Should().Be(expectedResult);
         }
 
-        //[TestMethod]
-        //public void Day01_SecondPuzzle()
-        //{
-        //    // Arrange
-        //    var expectedResult = "";
-        //    var dayToTest = new _2023Day01(_useExampleInput);
+        [TestMethod]
+        public void Day01_SecondPuzzle()
+        {
+            // Arrange
+            var expectedResult = "281";
+            var dayToTest = new _2023Day01(_useExampleInput);
 
-        //    // Act
-        //    var result = dayToTest.SecondPuzzle();
+            // Act
+            var result = dayToTest.SecondPuzzle();
 
-        //    // Assert
-        //    result.Should().Be(expectedResult);
-        //}
+            // Assert
+            result.Should().Be(expectedResult);
+        }
     }
 }
