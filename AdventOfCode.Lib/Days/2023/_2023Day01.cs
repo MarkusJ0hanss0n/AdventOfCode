@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace AdventOfCode.Lib.Days._2023
 {
-
     public class _2023Day01 : BaseDay, IDay
     {
         public _2023Day01(bool useExampleInput = false) : base(2023, 01, useExampleInput)
